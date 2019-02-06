@@ -1,5 +1,5 @@
 # This script runs a Devonian age-depth model to predict the Emsian-Eifelian
-# boundary. 
+# and Eifelian-Givetian boundaries. 
 # This script follows (and borrows much of its code from) a file titled
 # GTS12_SplineFigure_age_model_020519.R which was emailed to me by Mark Schmitz 
 # on 2019.02.06. Either Mark Schmitz or Robin Trayler is the author of most of 
@@ -71,18 +71,24 @@ modelPlot(model = DevonianModel,
           predictLabels = c("both"), # options are 'ages', 'ids', 'NA'
           legend = c("adjacent"))  # options are 'color', 'adjacent', 'NA'
 
-# visualize (and save) the parameter plots; if you want to print a pdf to the working directory set PDF = TRUE)
+# Visualize (and save) the parameter plots.
+# To print a pdf to the working directory add ", PDF = TRUE)" to the line below.
 parameterPlot(model = DevoniansplinefigModel1)  # DOES NOT WORK, SHOULD BE posteriorPlot
 
 
 ## SAVE RESULTS ----------------------------------------------------------------
 
-# write the predicted positions to a file
-write.csv(DevoniansplinefigPredict1$HDI, file = "DevoniansplinefigPredict1$HDI.csv")
-
-# write an object (e.g. an age model) to a file...
-saveRDS(DevoniansplinefigModel1, file = "DevoniansplinefigModel1.rds", ascii = FALSE, version = NULL,
-        compress = TRUE, refhook = NULL)
-
-# read an object (e.g. an age model) from a saved file...
-# DevoniansplinefigModel1 <- readRDS("DevoniansplinefigModel1.rds", refhook = NULL)
+# # Write the predicted positions to a file.
+# write.csv(DevonianPredict$HDI, file = "DevonianPredict$HDI.csv")
+# 
+# # Write an object (e.g. an age model) to a file.
+# saveRDS(DevonianModel, 
+#         file = "DevonianModel.rds", 
+#         ascii = FALSE, 
+#         version = NULL,
+#         compress = TRUE, 
+#         refhook = NULL)
+# 
+# # Read an object (e.g. an age model) from a saved file.
+# DevonianModel <- readRDS("DevonianModel.rds", 
+#                          refhook = NULL)
