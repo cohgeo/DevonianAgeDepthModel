@@ -73,7 +73,8 @@ modelPlot(model = DevonianModel,
 
 # Visualize (and save) the parameter plots.
 # To print a pdf to the working directory add ", PDF = TRUE)" to the line below.
-parameterPlot(model = DevoniansplinefigModel1)  # DOES NOT WORK, SHOULD BE posteriorPlot
+posteriorPlot(model = DevonianModel, 
+              prob = 0.95)
 
 
 ## SAVE RESULTS ----------------------------------------------------------------
