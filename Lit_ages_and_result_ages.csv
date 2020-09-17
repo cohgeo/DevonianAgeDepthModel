@@ -1,0 +1,9 @@
+stage,lit_Kaufmann_x,lit_Becker2012_x,lit_DeVandP2014_x,lit_Becker2020_x,Kaufmann_x,Becker2012_x,Becker2020_x,lit_Kaufmann_age,lit_Kaufmann_uncertaintyplus,lit_Kaufmann_uncertaintyminus,lit_Becker2012_age,lit_Becker2012_uncertaintyplus,lit_Becker2012_uncertaintyminus,lit_DeVandP2014_age,lit_DeVandP2014_uncertaintyplus,lit_DeVandP2014_uncertaintyminus,lit_Becker2020_age,lit_Becker2020_uncertaintyplus,lit_Becker2020_uncertaintyminus,Kaufmann_age,Kaufmann_uncertaintyplus,Kaufmann_uncertaintyminus,Becker2012_age,Becker2012_uncertaintyplus,Becker2012_uncertaintyminus,Becker2020_age,Becker2020_uncertaintyplus,Becker2020_uncertaintyminus
+baseCarboniferous,1,2,3,4,5,6,7,360.7,2.7,2.7,358.9,0.4,0.4,359.1,0.4,0.4,359.3,0.3,0.3,358.86,0.23,0.23,358.94,0.21,0.22,358.84,0.19,0.19
+baseFamennian,1.1,2.1,3.1,4.1,5.1,6.1,7.1,376.1,3.6,3.6,372.2,1.6,1.6,373.9,1.4,1.4,371.4,0.6,0.6,372.17,0.23,0.56,372.15,0.22,0.55,372.15,0.22,0.56
+baseFrasnian,0.9,1.9,2.9,3.9,4.9,5.9,6.9,383.7,3.1,3.1,382.7,1.0,1.0,380.8,1.5,1.5,379,0.9,0.9,381.97,1.96,2.35,382.13,1.73,1.89,381.99,1.45,1.53
+baseGivetian,1,2,3,4,5,6,7,388.1,2.6,2.6,387.7,0.8,0.8,385.1,1.6,1.6,385.9,1.5,1.5,387.68,1.43,1.89,387.61,1.28,1.66,387.64,1.1,1.48
+baseEifelian,1.1,2.1,3.1,4.1,5.1,6.1,7.1,391.9,3.4,3.4,393.3,1.2,1.2,395.1,2.7,2.7,394.2,1.6,1.6,393.11,1.02,1.26,393.43,0.77,1.15,393.51,0.7,1.02
+baseEmsian,0.9,1.9,2.9,3.9,4.9,5.9,6.9,409.1,3.8,3.8,407.6,2.6,2.6,407.9,4.2,2.5,407.9,1.0,1.0,410.33,2.11,2.38,410.91,2.04,2.56,410.55,1.63,1.81
+basePragian,1,2,3,4,5,6,7,412.3,3.5,3.5,410.8,2.8,2.8,411.1,3.5,3.5,414.4,1.1,1.1,413.79,1.89,2.2,414.49,1.97,2.16,412.88,1.7,1.61
+baseLochkovian,1.1,2.1,3.1,4.1,5.1,6.1,7.1,418.1,3.0,3.0,419.2,3.2,3.2,418.8,2.9,2.9,419,1.8,1.8,420.02,1.75,1.5,420.51,1.69,1.62,419.73,1.36,1.25
