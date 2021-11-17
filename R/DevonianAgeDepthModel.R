@@ -16,7 +16,7 @@
 
 # Set working directory 
   # Change the text in quotes to match your directory on your computer.
-  setwd("/Users/claireharrigan/Dropbox/IGL + research/Devonian/DevonianAgeDepthModel")
+  # setwd("/Users/claireharrigan/Dropbox/IGL + research/Devonian/DevonianAgeDepthModel")
 
 
 # IMPORT MODEL INPUTS ----------------------------------------------------------
@@ -29,33 +29,33 @@
 
 # Import model inputs.
   # KAUFMANN SCALE
-    # # Import radioisotpic ages, anchored astrochronology durations, and relative
-    # # stratigraphic positions.
-    # DevonianData <- read.csv("DevonianData_Kaufmann.csv",
-    #                          header = TRUE)
-    # # Import relative stratigraphic position of Stages.
-    # DevonianPositions <- read.csv("DevonianPositions_Kaufmann.csv",
-    #                               header = TRUE)
-    # # Import relative stratigraphic position of conodont biozone positions.
-    # # Because the Kaufmann scale is comprised of an alternative and a standard
-    # # scale, you will need to run agePredict for each of the lines below.
-    # DevonianPositions.c <- read.csv("DevonianPositions_Kaufmann_alt conodont.csv",
-    #                                 header = TRUE)
-    # DevonianPositions.c <- read.csv("DevonianPositions_Kaufmann_std conodont.csv",
-    #                                 header = TRUE)
-    # # Save a title for the plots.
-    # title <- "Kaufmann scale"
+    # Import radioisotpic ages, anchored astrochronology durations, and relative
+    # stratigraphic positions.
+    DevonianData <- read.csv("./data/DevonianData_Kaufmann.csv",
+                             header = TRUE)
+    # Import relative stratigraphic position of Stages.
+    DevonianPositions <- read.csv("./data/DevonianPositions_Kaufmann.csv",
+                                  header = TRUE)
+    # Import relative stratigraphic position of conodont biozone positions.
+    # Because the Kaufmann scale is comprised of an alternative and a standard
+    # scale, you will need to run agePredict for each of the lines below.
+    DevonianPositions.c <- read.csv("./data/DevonianPositions_Kaufmann_alt conodont.csv",
+                                    header = TRUE)
+    DevonianPositions.c <- read.csv("./data/DevonianPositions_Kaufmann_std conodont.csv",
+                                    header = TRUE)
+    # Save a title for the plots.
+    title <- "Kaufmann scale"
 
   # BECKER 2012 SCALE
     # # Import radioisotpic ages, anchored astrochronology durations, and relative
     # # stratigraphic positions.
-    # DevonianData <- read.csv("DevonianData_Becker2012.csv",
+    # DevonianData <- read.csv("./data/DevonianData_Becker2012.csv",
     #                          header = TRUE)
     # # Import relative stratigraphic position of Stages.
-    # DevonianPositions <- read.csv("DevonianPositions_Becker2012.csv",
+    # DevonianPositions <- read.csv("./data/DevonianPositions_Becker2012.csv",
     #                               header = TRUE)
     # # Import relative stratigraphic position of conodont biozone positions.
-    # DevonianPositions.c <- read.csv("DevonianPositions_Becker 2012_conodont.csv",
+    # DevonianPositions.c <- read.csv("./data/DevonianPositions_Becker 2012_conodont.csv",
     #                                 header = TRUE)
     # # Save a title for the plots.
     # title <- "Becker 2012 scale"
@@ -63,13 +63,13 @@
   # BECKER 2020 SCALE
     # # Import radioisotpic ages, anchored astrochronology durations, and relative
     # # stratigraphic positions.
-    # DevonianData <- read.csv("DevonianData_Becker2020.csv",
+    # DevonianData <- read.csv("./data/DevonianData_Becker2020.csv",
     #                          header = TRUE)
     # # Import relative stratigraphic position of Stages.
-    # DevonianPositions <- read.csv("DevonianPositions_Becker2020.csv",
+    # DevonianPositions <- read.csv("./data/DevonianPositions_Becker2020.csv",
     #                               header = TRUE)
     # # Import relative stratigraphic position of conodont biozone positions.
-    # DevonianPositions.c <- read.csv("DevonianPositions_Becker 2020_conodont.csv",
+    # DevonianPositions.c <- read.csv("./data/DevonianPositions_Becker 2020_conodont.csv",
     #                                 header = TRUE)
     # # Save a title for the plots.
     # title <- "Becker 2020 scale"
@@ -107,11 +107,11 @@
 # Load in previous model results.
   # Uncomment and run the following code to load a previously saved model.
   # # KAUFMANN SCALE
-  #   DevonianModel <- readRDS("DevonianModel_Kaufmann.rds")
+  #   DevonianModel <- readRDS("./results/DevonianModel_Kaufmann.rds")
   # # BECKER 2012 SCALE
-  #   DevonianModel <- readRDS("DevonianModel_Becker2012.rds")
+  #   DevonianModel <- readRDS("./results/DevonianModel_Becker2012.rds")
   # # BECKER 2020 SCALE
-  #   DevonianModel <- readRDS("DevonianModel_Becker2020.rds")
+  #   DevonianModel <- readRDS("./results/DevonianModel_Becker2020.rds")
   
 ## SAVE MODEL ------------------------------------------------------------------
 
@@ -120,13 +120,13 @@
   # function (write DevonianModel to a file) so that it can be loaded into R and
   # used again later.
   # # KAUFMANN SCALE
-  #   saveRDS(DevonianModel, file = "DevonianModel_Kaufmann.rds",
+  #   saveRDS(DevonianModel, file = "./results/DevonianModel_Kaufmann.rds",
   #           ascii = FALSE, version = NULL, compress = TRUE, refhook = NULL)
   # # BECKER 2012 SCALE
-  #   saveRDS(DevonianModel, file = "DevonianModel_Becker2012.rds",
+  #   saveRDS(DevonianModel, file = "./results/DevonianModel_Becker2012.rds",
   #           ascii = FALSE, version = NULL, compress = TRUE, refhook = NULL)
   # # BECKER 2020 SCALE
-  #   saveRDS(DevonianModel, file = "DevonianModel_Becker2020.rds",
+  #   saveRDS(DevonianModel, file = "./results/DevonianModel_Becker2020.rds",
   #           ascii = FALSE, version = NULL, compress = TRUE, refhook = NULL)
 
       
@@ -155,21 +155,21 @@
   # denisty interval results for predicted positions to to a csv file.
   # # KAUFMANN SCALE
   #   write.csv(HDI,
-  #             file = "Results_Kaufmann_stage ages.csv")
+  #             file = "./results/Results_Kaufmann_stage ages.csv")
   #   write.csv(HDI.c,
-  #             file = "Results_Kaufmann_alternative conodont biozone ages.csv")
+  #             file = "./results/Results_Kaufmann_alternative conodont biozone ages.csv")
   #   write.csv(HDI.c,
-  #             file = "Results_Kaufmann_standard conodont biozone ages.csv")
+  #             file = "./results/Results_Kaufmann_standard conodont biozone ages.csv")
   # # BECKER 2012 SCALE
   #   write.csv(HDI,
-  #             file = "Results_Becker2012_stages ages.csv")
+  #             file = "./results/Results_Becker2012_stages ages.csv")
   #   write.csv(HDI.c,
-  #             file = "Results_Becker2012_conodont biozone ages.csv")
+  #             file = "./results/Results_Becker2012_conodont biozone ages.csv")
   # # BECKER 2020 SCALE
   #   write.csv(HDI,
-  #             file = "Results_Becker2020_stage ages.csv")
+  #             file = "./results/Results_Becker2020_stage ages.csv")
   #   write.csv(HDI.c,
-  #             file = "Results_Becker2020_conodont biozone ages.csv")
+  #             file = "./results/Results_Becker2020_conodont biozone ages.csv")
 
   
 ## VISUALIZE MODEL RESULTS -----------------------------------------------------

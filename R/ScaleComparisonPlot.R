@@ -9,7 +9,7 @@
   # rm(list = ls())  # Uncomment if needed
 
 # Read in table of ages and uncertainties for each scale.
-DF <- read.csv("Lit_ages_and_result_ages.csv",
+DF <- read.csv("./data/Lit_ages_and_result_ages.csv",
                header = TRUE)
 
 ## MAKE PLOT -------------------------------------------------------------------

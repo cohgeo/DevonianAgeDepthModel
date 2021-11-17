@@ -10,15 +10,15 @@
 
 # Import data frames.
   # Import data frame of ages and uncertainties of anchor points.
-  DF.ast.anchors <- read.csv("DF.ast.anchors.csv", 
+  DF.ast.anchors <- read.csv("./data/DF.ast.anchors.csv", 
                              header = TRUE)
   # Import data frame of durations and uncertainties of Stages and parts of 
   # Stages.
-  DF.ast.dur <- read.csv("DF.ast.dur.csv", 
+  DF.ast.dur <- read.csv("./data/DF.ast.dur.csv", 
                          header = TRUE)
   # Import data frame to hold results of the astrochronology propagation done in
   # this script.
-  DF.ast <- read.csv("DF.ast.csv", 
+  DF.ast <- read.csv("./data/DF.ast.csv", 
                      header = TRUE)
 
 # Indicate which of the conodont scales (Kaufmann, Becker 2012, Becker 2020) to
@@ -1032,7 +1032,7 @@
 ## SAVE DF.ast -----------------------------------------------------------------
   
 # Save DF.ast data frame as a .csv file.
-  write.csv(DF.ast, file = "DF.ast.complete.csv")
+  # write.csv(DF.ast, file = "./results/DF.ast.complete.csv")
   
   
   
