@@ -1,4 +1,4 @@
-# DevonianAgeDepthModel
+# Recalibrating the Devonian time scale: A new method for integrating radioisotopic and astrochronologic ages in a Bayesian framework
 
 ## Introduction
 
